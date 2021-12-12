@@ -7,138 +7,306 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/kave.css">
-    <title>Document</title>
+    <title>Lucky kávézó</title>
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">Lucky
-                <img src="img/clover.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav mr-auto">
-                <a class="nav-link active" href="index.html">Főoldal</span></a>
-                <a class="nav-link" href="kave.html">Kávéfajták</a>
-                <a class="nav-link" href="suti.html">Sütemények</a>
-                <a class="nav-link" href="blog.html">Blog</a>
-              </div>
-              <div class="navbar-nav ml-auto">
-                <a class="nav-link active" href="#">Bejelentkezés</span></a>
-                <a class="nav-link" href="#">Regisztráció</a>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Lucky
+          <img src="img/clover.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-link active" href="index.html">Főoldal</span></a>
+            <a class="nav-link" href="kave.html">Kávéfajták</a>
+            <a class="nav-link" href="suti.html">Sütemények</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="#">Bejelentkezés</span></a>
+            <a class="nav-link" href="#">Regisztráció</a>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"></div>
+      <div class="container">
+        <h1 class="text-center p-3">Lucky - Kávéfajták</h1>
+        <div class="row">
+          <div class="col-md-4 col-12 text-center mb-3">
+            <div class="card">
+              <img src="img/espresso.png" class="card-img-top" alt="espresso">
+              <div class="card-body">
+                <h5 class="card-title"><a class="text-success" href="#" data-toggle="modal"
+                    data-target="#idEspresso">Espresso</a></h5>
               </div>
             </div>
-          </nav>
-          <div class="banner"></div>
-          <div class="container">
-              <h1 class="text-center p-3">Lucky -Kávéfajták</h1>
-              <div class="row">
-                  <div class="col-md-4 col-12 text-center mb3">
-                    <div class="card">
-                        <img src="img/espresso.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#idEspresszo"></a> Espresso</h5>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 text-center mb3">
-                    <div class="card">
-                        <img src="img/dopio.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Dopio</h5>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 text-center mb3">
-                    <div class="card">
-                        <img src="img/melange.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Melange</h5>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 text-center mb3">
-                    <div class="card">
-                        <img src="img/ristretto.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Ristretto</h5>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 text-center mb3">
-                    <div class="card">
-                        <img src="img/lungo.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Lungo</h5>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-12 text-center mb3">
-                    <div class="card">
-                        <img src="img/americano.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Americano</h5>
-                        </div>
-                    </div>
-                  </div>
+          </div>
+          <div class="col-md-4 col-12 text-center mb-3">
+            <div class="card">
+              <img src="img/dopio.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a class="text-success" href="#" data-toggle="modal"
+                  data-target="#idDoppio">Doppio</a></h5>
               </div>
-              <!-- Modal -->
-              <div class="modal fade" id="idEspresso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center mb-3">
+            <div class="card">
+              <img src="img/melange.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a class="text-success" href="#" data-toggle="modal"
+                  data-target="#idMelange">Melange</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center mb-3">
+            <div class="card">
+              <img src="img/ristretto.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a class="text-success" href="#" data-toggle="modal"
+                  data-target="#idRistretto">Ristretto</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center mb-3">
+            <div class="card">
+              <img src="img/lungo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a class="text-success" href="#" data-toggle="modal"
+                  data-target="#idLungo">Lungo</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center mb-3">
+            <div class="card">
+              <img src="img/americano.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a class="text-success" href="#" data-toggle="modal"
+                  data-target="#idAmericano">Americano</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="idEspresso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/espresso.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Espresso</h2>
+                      <p>A kávézás védjegye az espresso, gyakorlatilag a presso a kávézás alfája és omegája, valamennyi típusnak a sima fekete
+                        adja az alapját. A valódi olasz espresso készítéséhez 7 gramm őrölt kávét használunk fel, ami 90 fokos vízzel készül 9
+                        bar nyomáson,
+                        és 20-25 másodpercig csapoljuk. A kész kávé 25-30 ml, és állandó kísérője a tetején képződő bársonyos hab, a crema.
+                        Az olaszoknál az espresso klasszikus fekete kávé, tehát magában, tej és cukor nélkül isszák.</p>
                       </div>
-                      <div class="modal-body text-justify">
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <img src="img/espresso.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                              <h2>Espresso</h2>
-                              <p>A világon nagyon sokan, sokféle kávét készítenek és kávéházak hirdetik az itallapjukon, hogy „olasz
-                                eszpresszó” ennyi meg annyiba kerül. Ahány kávézóba térünk be, annyiféle italt fogunk kapni. Egy számunkra
-                                ismeretlen kávézóban
-                                sosem tudhatjuk előre, hogy egy mennyei italt, vagy egy híg, eszpresszónak semmiképpen nem nevezhető löttyöt
-                                kapunk. Gondolom a kedves olvasó is járt már így, eléggé zavaró tud lenni és ez bizony zavarta az olasz
-                                embereket is. Minőségbiztosítási célzattal 1998-ban létrehozták a Espresso National Institute-ot, vagyis a
-                                Nemzeti Eszpresszó Intézet-et.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
-                        </div>
-                      </div>
-                      </div>
-                      </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="idDoppio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/dopio.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Doppio</h2>
+                      <p>A doppió kávé trükkös, mert névről szinte senki sem ismeri, mégis mindenki találkozott már vele, aki egy duplát
+                        szürcsölgetett. A kávé neve ugyanis ezt jelenti olaszul, vagyis egy dupla eszpresszóról van szó, amit kétszeres
+                        mennyiségű őrleményből, kétszeres vízmennyiséggel készítünk.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="idMelange" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/melange.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Melange</h2>
+                      <p>Ha mélange-ot rendelünk a pultnál, első látásra egy latte macchiatót kapunk. Nem telik bele sok idő, mire
+                        észrevesszük a pohár alján napfényként megcsillanó arany foltot. Ebben az elbujtatott csillogásban rejlik a mélange
+                        sajátossága is: a kávékülönlegesség alján egy réteg méz pihen, új gasztronómiai élménnyel is meglepve fogyasztóját.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="idRistretto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/ristretto.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Ristretto</h2>
+                      <p>A legkevesebb koffeint tartalmazó, legkisebb térfogatot kitöltő, legrövidebb idő alatt elkészülő kávé a ristretto.
+                        Az apró, átlátszó pohárkában érkező kávé maximum két ujjnyi magasságban érhet fel a pohár falán, és bár van némi
+                        élénkítő hatása, közel sem olyan bivalyerős, mint az espresso.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="idLungo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/lungo.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Lungo</h2>
+                      <p>Az espresso nagytestvéreként tekinthetünk a hosszú kávéra, amelyet lungónak is neveznek. A koffein mennyiséget
+                        tekintve nem tér el sokban a rövid feketétől, viszont hosszabb ideig készül, több ideig főzzük, így a víz mennyisége
+                        is több lesz a kávéban. Viszont ez az a kávétípus, amelynél általában megkérdezik a pultnál, hogy tejjel vagy tej
+                        nélkül kérjük-e.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="idAmericano" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Részletes leírás</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/americano.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Americano</h2>
+                      <p>Az americano is egy hosszú kávé, a lungohoz hasonlóan forró víz hozzáadásával készül. Egészen pontosan a csészébe
+                        először a megfelelő mennyiségű - 150-180 ml - forró vizet töltjük bele, és ebbe csapoljuk az espressót. Az americano
+                        kávé íze a lungóhoz képest közelebb áll a filteres kávéhoz.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </div>
       <footer class="container-fluid text-white">
-          <div class="row">
-            <div class="col-md-4 col-12 offset-md-1">
-              <h2>Kapcsolat</h2>
-              <ul>
-                <li><img src="img/letter.svg" alt=""> Kávézó</li>
-                <li><img src="img/email.svg" alt=""> lucky@gmail.com</li>
-                <li><img src="img/phone.svg" alt=""> +36-33-158-5588</li>
-              </ul>
-            </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 offset-md-1">
+            <h2>Kapcsolat</h2>
+            <ul>
+              <li><img src="img/letter.svg" alt=""> Lucky Kávézó</li>
+              <li><img src="img/email.svg" alt=""> lucky@gmail.com</li>
+              <li><img src="img/phone.svg" alt=""> +36-33-158-5588</li>
+            </ul>
           </div>
-          <div class="col-md-4 col-12">
-            <h2>Kávé Magazin</h2>
-            <p>Íratkozz fel a magazinunkra!</p>
-            <form class="form-inline">
-              <input type="text" class="form-control" placeholder="email">
-              <button class="btn btn-success">Felíratkozom</button>
-            </form>
-          </div>
-        </footer>
+        
+        <div class="col-md-4 col-sm-6">
+          <h2>Kávé Magazin</h2>
+          <p>Iratkozz fel a magazinunkra!</p>
+          <form class="form-inline">
+            <input type="text" class="form-control" placeholder="email">
+            <button class="btn btn-success">Feliratkozom</button>
+          </form>
+        </div>
+        </div>
+      </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
