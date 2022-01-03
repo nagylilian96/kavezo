@@ -14,3 +14,7 @@ li{
 li img{
     height: 1.5rem;
 }
+.container-fluid{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
